@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read articles and join the discussion on BlogSpace.">
+    <title>Blog Article | BlogSpace</title>
+    <link rel="stylesheet" href="frontend/css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">Blog<span>Space.</span></a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#blogs">Explore</a>
+            </div>
+
+            <div class="nav-actions" id="navActions"></div>
+        </nav>
+    </header>
+
+    <main class="container article-section">
+
+        <a href="index.html" class="back-link">← Back to blogs</a>
+
+        <article class="article-card" id="articleContainer">
+            <p class="loading-message">Loading article...</p>
+        </article>
+
+        <section class="comments-section">
+
+            <div class="comments-heading">
+                <div>
+                    <span class="eyebrow">COMMUNITY DISCUSSION</span>
+                    <h2>Comments</h2>
+                </div>
+
+                <span id="commentCount">0 comments</span>
+            </div>
+
+            <div id="commentFormContainer"></div>
+
+            <div id="commentsContainer" class="comments-list">
+                <p class="loading-message">Loading comments...</p>
+            </div>
+
+            <p id="commentsMessage"
+               class="message"
+               role="status"
+               aria-live="polite">
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a href="index.html" class="logo">Blog<span>Space.</span></a>
+            <p>© <span id="currentYear"></span> BlogSpace.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="frontend/js/auth.js"></script>
+    <script type="module" src="frontend/js/post.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | BlogSpace</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                Blog<span>Space.</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="dashboard.html" class="active">Dashboard</a>
+            </div>
+
+            <div class="nav-actions" id="navActions"></div>
+        </nav>
+    </header>
+
+    <main class="container dashboard-section">
+
+        <div class="dashboard-header">
+            <div>
+                <span class="eyebrow">YOUR WORKSPACE</span>
+                <h1>My Dashboard</h1>
+                <p id="welcomeMessage">Welcome to your dashboard.</p>
+            </div>
+
+            <a href="create-post.html" class="btn btn-primary">
+                + Create New Post
+            </a>
+        </div>
+
+        <section class="dashboard-content">
+
+            <div class="dashboard-section-heading">
+                <h2>My Blog Posts</h2>
+                <span id="postCount">Loading...</span>
+            </div>
+
+            <div id="dashboardPosts" class="posts-grid">
+                <p class="loading-message">Loading your posts...</p>
+            </div>
+
+            <p id="dashboardMessage"
+               class="message"
+               role="status"
+               aria-live="polite">
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a href="index.html" class="logo">
+                Blog<span>Space.</span>
+            </a>
+
+            <p>© <span id="currentYear"></span> BlogSpace.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/auth.js"></script>
+    <script type="module" src="js/dashboard.js"></script>
+
+</body>
+</html>
