@@ -1,5 +1,5 @@
 
-export const API_BASE = "http://localhost:5000/api";
+export const API_BASE = "https://blogspace-sotd.onrender.com/api";
 
 export function getToken() {
     return localStorage.getItem("blogToken");
